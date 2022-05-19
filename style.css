@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+#gameDiv {
+  display: inline-block;
+  font-family: Arial;
+  border: 3px solid;
+  border-radius: 25px;
+  padding: 10px;
+  border-color: rgb(170, 170, 170);
+  background-color: rgb(170, 170, 170);
+  color:rgb(240, 240, 240)
+  
+}
+
+.choiceBtn {
+  border: 3px solid;
+  border-color: rgb(170, 170, 170);
+  border-radius: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  background-color: rgb(170, 170, 170);
+  cursor: pointer;
+  color:rgb(240, 240, 240);
+  transition: background-color 0.15s;
+  padding: 10px 7px 10px 7px;
+}
+
+.choiceBtn:hover {
+  background-color: rgb(125, 125, 125);
+}
