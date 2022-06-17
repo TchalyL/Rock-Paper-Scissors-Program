@@ -37,14 +37,17 @@ function computerTurn() {
 }
 
 function checkWinner() {
-    if (player == computer){
-        return "DRAW"
-    } else if(computer == "ROCK"){
-        return  (player == "PAPER") ? "YOU WIN!" : "YOU LOSE"
-    } else if(computer == "PAPER"){
-        return  (player == "SCISSORS") ? "YOU WIN!" : "YOU LOSE"
-    } else if(computer == "SCISSORS"){
-        return  (player == "ROCK") ? "YOU WIN!" : "YOU LOSE"
+    switch (true) {
+        case player == computer:
+            return "Draw"
+        case computer == "ROCK":
+            return  (player == "PAPER") ? "YOU WIN!" : "YOU LOSE"
+        case computer == "PAPER":
+            return  (player == "SCISSORS") ? "YOU WIN!" : "YOU LOSE"
+        case computer == "SCISSORS":
+            return  (player == "ROCK") ? "YOU WIN!" : "YOU LOSE"
+        default:
+            break;
     }
 }
 
