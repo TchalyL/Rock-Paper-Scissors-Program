@@ -20,7 +20,6 @@ choiceBtns.forEach(button =>{
     })
 })
 
-
 function computerTurn() {
     const randNum = Math.floor(Math.random() * 3) + 1
     switch (randNum) {
@@ -50,8 +49,3 @@ function checkWinner() {
             break;
     }
 }
-
-
-
-
-
